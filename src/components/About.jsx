@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import { motion } from 'framer-motion';
+import profile from '../assets/photo.jpeg'; // Placeholder for profile image
 
 const About = () => {
   const timelineEntries = [
@@ -27,7 +28,7 @@ const About = () => {
     {
       title: "📈 Passionate About Impact",
       description: "Always curious. Always improving. Building products that matter through thoughtful code & design.",
-      year: "Present"
+      year: "Now"
     }
   ];
 
@@ -47,7 +48,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <div className={styles.picturePlaceholder}>
-              AKP
+              <img src={profile} alt="AKP" />
             </div>
           </motion.div>
           

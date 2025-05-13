@@ -1,6 +1,6 @@
-// Updated Home.jsx with Dock Navigation
+// Updated Home.jsx for Dark Mode Only
 
-import React, { useContext } from 'react';
+import React from 'react';
 import Hero from '../components/Hero';
 import ProjectSection from '../components/ProjectSection';
 import SkillsSection from '../components/SkillsSection';
@@ -9,14 +9,11 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Dock from '../components/Dock';
-import { ThemeContext } from '../context/ThemeContext';
 
 const Home = () => {
-  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
-
   return (
-    <>
-      <Dock toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+    <div className="dark-theme">
+      <Dock />
       <Hero />
       <ProjectSection />
       <SkillsSection />
@@ -24,7 +21,7 @@ const Home = () => {
       <About />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

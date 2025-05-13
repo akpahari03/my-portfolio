@@ -16,7 +16,7 @@
   padding: 20px 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   position: relative;
-  /* Add space for magnification */
+  /* Add space for effects */
   margin: 0 5px;
 }
 
@@ -32,13 +32,34 @@
   margin: 12px 0;
   cursor: pointer;
   position: relative;
-  /* Removed transition from here as it's handled by Framer Motion */
   background: #323232;
   will-change: transform;
+  overflow: hidden;
+  /* Add border for glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.dockItem:hover {
-  background: #464646;
+.iconWrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.glowEffect {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(100, 181, 246, 0.7) 0%, rgba(0, 0, 0, 0) 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.7;
+  filter: blur(8px);
 }
 
 .active {
@@ -62,6 +83,22 @@
   white-space: nowrap;
   pointer-events: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+}
+
+/* Add a subtle arrow to the label */
+.dockLabel::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: #232323;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Media query for tablet and mobile */
@@ -71,7 +108,7 @@
     left: 0;
     top: unset;
     width: 100%;
-    transform: none;
+    transform: none !important;
   }
   
   .dock {
@@ -91,5 +128,15 @@
     transform: translateX(-50%);
     top: -40px;
     bottom: unset;
+  }
+  
+  .dockLabel::after {
+    left: 50%;
+    top: auto;
+    bottom: -5px;
+    transform: translateX(-50%) rotate(45deg);
+    border: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
 }

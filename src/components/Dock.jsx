@@ -40,9 +40,9 @@ const Dock = ({ toggleTheme, isDarkMode }) => {
   const dockItems = [
     { id: 'hero', icon: <FaHome />, action: () => scrollTo('hero'), label: 'Home' },
     { id: 'projects', icon: <FaCode />, action: () => scrollTo('projects'), label: 'Projects' },
-    { id: 'linkedin', icon: <FaLinkedinIn />, action: () => openLink('https://linkedin.com/in/yourusername'), label: 'LinkedIn' },
-    { id: 'github', icon: <FaGithub />, action: () => openLink('https://github.com/yourusername'), label: 'GitHub' },
-    { id: 'twitter', icon: <FaTwitter />, action: () => openLink('https://twitter.com/yourusername'), label: 'Twitter' },
+    { id: 'linkedin', icon: <FaLinkedinIn />, action: () => openLink('https://www.linkedin.com/in/ayush-kumar-pahari-465090224/'), label: 'LinkedIn' },
+    { id: 'github', icon: <FaGithub />, action: () => openLink('https://github.com/akpahari03'), label: 'GitHub' },
+    { id: 'twitter', icon: <FaTwitter />, action: () => openLink('https://x.com/ayushkp2003'), label: 'Twitter' },
     { id: 'contact', icon: <FaEnvelope />, action: () => scrollTo('contact'), label: 'Contact' }
   ];
 
@@ -55,21 +55,6 @@ const Dock = ({ toggleTheme, isDarkMode }) => {
       label: 'Toggle Theme' 
     });
   }
-
-  // Calculate scale for each item based on distance from hovered item
-  const getScale = (index) => {
-    if (hoveredIndex === null) return 1;
-    
-    // Distance from hovered item
-    const distance = Math.abs(index - hoveredIndex);
-    
-    // Scale factors
-    if (distance === 0) return 1.2; // Hovered item
-    if (distance === 1) return 1.1; // Adjacent items
-    if (distance === 2) return 1.05; // Items two away
-    
-    return 1; // Default scale
-  };
 
   return (
     <motion.div 
@@ -86,16 +71,37 @@ const Dock = ({ toggleTheme, isDarkMode }) => {
             onClick={item.action}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            animate={{ 
-              scale: getScale(index)
+            whileHover={{ 
+              scale: 1.1,
+              boxShadow: "0 0 15px rgba(100, 181, 246, 0.4)"
             }}
             transition={{ 
               type: "spring", 
-              stiffness: 300, 
-              damping: 20 
+              stiffness: 500, 
+              damping: 15 
             }}
           >
-            {item.icon}
+            <motion.div 
+              className={styles.iconWrapper}
+              animate={{ 
+                rotateY: hoveredIndex === index ? 360 : 0
+              }}
+              transition={{ 
+                duration: 0.8, 
+                ease: "easeInOut"
+              }}
+            >
+              {item.icon}
+            </motion.div>
+            
+            {hoveredIndex === index && (
+              <motion.div 
+                className={styles.glowEffect}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              />
+            )}
             
             {/* Label that appears on hover */}
             {hoveredIndex === index && (

@@ -35,7 +35,7 @@ const CodingProfiles = () => {
                 <span className={styles.statLabel}>Rating</span>
               </div>
             </div>
-            <a href="#" target="_blank" rel="noreferrer" className={styles.profileLink}>
+            <a href="https://leetcode.com/u/akpahari03/" target="_blank" rel="noreferrer" className={styles.profileLink}>
               View Profile <FaExternalLinkAlt />
             </a>
           </div>
@@ -61,7 +61,7 @@ const CodingProfiles = () => {
                 <span className={styles.statLabel}>Problems</span>
               </div>
             </div>
-            <a href="#" target="_blank" rel="noreferrer" className={styles.profileLink}>
+            <a href="https://www.geeksforgeeks.org/user/akpahari03/" target="_blank" rel="noreferrer" className={styles.profileLink}>
               View Profile <FaExternalLinkAlt />
             </a>
           </div>
