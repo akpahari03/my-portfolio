@@ -1,0 +1,29 @@
+.footer {
+  padding: 2rem 1rem;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heart {
+  color: #e25555;
+  display: inline-block;
+  margin: 0 0.2rem;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.copyright {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}

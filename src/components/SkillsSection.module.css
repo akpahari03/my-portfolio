@@ -1,0 +1,112 @@
+.skills {
+  padding: 6rem 2rem;
+  background: var(--bg-primary);
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.headingAccent {
+  background: linear-gradient(135deg, var(--accent) 0%, #555 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtext {
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px var(--shadow);
+  padding: 1.8rem;
+  border-radius: 16px;
+  transition: var(--transition);
+}
+
+.category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  background: var(--bg-secondary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.categoryHeader h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skillItem {
+  text-align: left;
+}
+
+.skillInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.percentage {
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.progressBg {
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent) 0%, #555 100%);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+}
