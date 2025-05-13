@@ -1,0 +1,95 @@
+.dockContainer {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) !important;
+  z-index: 1000;
+  height: auto;
+}
+
+.dock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #232323;
+  border-radius: 0 12px 12px 0;
+  padding: 20px 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  /* Add space for magnification */
+  margin: 0 5px;
+}
+
+.dockItem {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  margin: 12px 0;
+  cursor: pointer;
+  position: relative;
+  /* Removed transition from here as it's handled by Framer Motion */
+  background: #323232;
+  will-change: transform;
+}
+
+.dockItem:hover {
+  background: #464646;
+}
+
+.active {
+  background: #64b5f6;
+  color: white;
+}
+
+.active:hover {
+  color: white;
+  background: #75bef7;
+}
+
+.dockLabel {
+  position: absolute;
+  left: 65px;
+  color: white;
+  background: #232323;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for tablet and mobile */
+@media (max-width: 768px) {
+  .dockContainer {
+    bottom: 0;
+    left: 0;
+    top: unset;
+    width: 100%;
+    transform: none;
+  }
+  
+  .dock {
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+  }
+  
+  .dockItem {
+    margin: 0 8px;
+  }
+  
+  .dockLabel {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    bottom: unset;
+  }
+}

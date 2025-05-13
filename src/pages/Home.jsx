@@ -1,7 +1,6 @@
-// Home.jsx with Enhanced Components
+// Updated Home.jsx with Dock Navigation
 
 import React, { useContext } from 'react';
-import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import ProjectSection from '../components/ProjectSection';
 import SkillsSection from '../components/SkillsSection';
@@ -9,6 +8,7 @@ import CodingProfiles from '../components/CodingProfiles';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Dock from '../components/Dock';
 import { ThemeContext } from '../context/ThemeContext';
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
+      <Dock toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Hero />
       <ProjectSection />
       <SkillsSection />
