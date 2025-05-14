@@ -1,13 +1,13 @@
-# Root .gitignore
+# Frontend .gitignore
 
 # Dependencies
-node_modules/
+node_modules
 /.pnp
 .pnp.js
 
 # Production build files
-/frontend/dist/
-/frontend/build/
+/dist
+/build
 
 # Environment files
 .env
@@ -28,7 +28,7 @@ lerna-debug.log*
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea/
+.idea
 .DS_Store
 *.suo
 *.ntvs*
@@ -38,6 +38,8 @@ lerna-debug.log*
 
 # Testing
 /coverage
+/cypress/videos/
+/cypress/screenshots/
 
 # Miscellaneous
 .cache/
@@ -45,3 +47,6 @@ lerna-debug.log*
 .temp/
 .eslintcache
 .tsbuildinfo
+
+# Vite specific
+*.local

@@ -172,7 +172,7 @@ const Hero = () => {
           <div className={styles.smallText}>Hello, I'm</div>
           <h1 className={styles.title}>Ayush Kumar Pahari</h1>
           <p className={styles.subtitle}>
-            Full Stack Developer (MERN) · DSA Enthusiast
+            From pixel to backend — building sleek, smart, and scalable web apps
           </p>
           
           <motion.div 
@@ -181,7 +181,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, staggerChildren: 0.1 }}
           >
-            {['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Redis', 'Socket.IO', 'Google Gemini'].map((tech, index) => (
+            {['React.js', 'Express.js', 'Node.js', 'MongoDB', 'API', 'DSA'].map((tech, index) => (
               <motion.span 
                 key={tech} 
                 className={styles.techBadge}
@@ -200,7 +200,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
           >
-            <a href="#" className={styles.primaryBtn}>Download Resume</a>
+            <a href="https://drive.google.com/file/d/1mb2kk2bouD2qnHWF3e_d7y_x9YtZLs9o/view?usp=sharing" target='_blank' className={styles.primaryBtn}>Download Resume</a>
             <button onClick={scrollToProjects} className={styles.secondaryBtn}>
               View Projects
             </button>

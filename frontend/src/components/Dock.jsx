@@ -6,6 +6,18 @@ import styles from './Dock.module.css';
 const Dock = ({ toggleTheme, isDarkMode }) => {
   const [activeSection, setActiveSection] = useState('home');
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if on mobile device
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile(); // Check on initial load
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     // Update active section based on scroll position
@@ -54,6 +66,11 @@ const Dock = ({ toggleTheme, isDarkMode }) => {
       action: toggleTheme, 
       label: 'Toggle Theme' 
     });
+  }
+
+  // Don't render on mobile, as we're using the BurgerMenu instead
+  if (isMobile) {
+    return null;
   }
 
   return (

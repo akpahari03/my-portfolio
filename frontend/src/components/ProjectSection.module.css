@@ -47,6 +47,19 @@
   overflow: hidden;
 }
 
+/* New style for the project image */
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .projectImage {
+  transform: scale(1.05);
+}
+
 .imageOverlay {
   position: absolute;
   top: 0;
