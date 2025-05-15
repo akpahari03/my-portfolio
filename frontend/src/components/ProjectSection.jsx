@@ -43,7 +43,7 @@ const projects = [
     description:
       'Weather app built with React.js. Integrated OpenWeather and GeoDB APIs for real-time weather and location data.',
     github: 'https://github.com/akpahari03/Weather-App',
-    demo: '#',
+    demo: 'https://ayushkp-weather-app.vercel.app/',
     image: project4Image,
   }
 ];
