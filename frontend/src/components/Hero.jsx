@@ -170,7 +170,7 @@ const Hero = () => {
           className={styles.intro}
         >
           <div className={styles.smallText}>Hello, I'm</div>
-          <h1 className={styles.title}>Ayush Kumar</h1>
+          <h1 className={styles.title}>Ayush Kumar Pahari</h1>
           <p className={styles.subtitle}>
             From pixel to backend — building sleek, smart, and scalable web apps
           </p>
