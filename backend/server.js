@@ -16,12 +16,10 @@ const PORT = process.env.PORT || 5001;
 // CORS Configuration - UPDATED to allow localhost:5173
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com', 'https://www.yourdomain.com'] // Replace with your actual domain in production
-    : ['http://localhost:5173', 'http://localhost:3000', 'http://127.0.0.1:5173'],
+    ? [process.env.FRONTEND_URL] // Will set this in Vercel environment variables
+    : ['http://localhost:5173', 'http://localhost:3000'],
   optionsSuccessStatus: 200,
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  credentials: true
 };
 
 // Middleware

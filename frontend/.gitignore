@@ -50,3 +50,4 @@ lerna-debug.log*
 
 # Vite specific
 *.local
+.vercel
