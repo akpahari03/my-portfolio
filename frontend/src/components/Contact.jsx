@@ -97,9 +97,7 @@ const Contact = () => {
     
     try {
       // Use BACKEND_API_URL from environment or default to localhost in development
-      const API_URL = import.meta.env.VITE_BACKEND_API_URL || 'http://localhost:5001';
-      console.log("Sending form data to:", API_URL);
-
+      const API_URL = import.meta.env.VITE_BACKEND_API_URL;
 
       
       console.log('Sending form data to:', `${API_URL}/api/contact`);
