@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import { motion } from 'framer-motion';
-import profile from '../assets/photo.jpeg'; // Placeholder for profile image
+import profile from '../assets/photo.jpeg';
 
 const About = () => {
   const timelineEntries = [

@@ -1,4 +1,3 @@
-// middleware/errorHandler.js - Enhanced with better error messaging
 const errorHandler = (err, req, res, next) => {
   console.error('Error occurred:', err);
   
