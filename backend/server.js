@@ -14,12 +14,24 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // CORS Configuration - UPDATED to allow localhost:5173
+
+const allowedOrigins = [
+  'https://ayushkp-portfolio.vercel.app',
+  'http://localhost:3000',
+  'http://localhost:5173'
+];
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production' 
-    ? [process.env.FRONTEND_URL] // Will set this in Vercel environment variables
-    : ['http://localhost:5173', 'http://localhost:3000'],
-  optionsSuccessStatus: 200,
-  credentials: true
+  origin: function (origin, callback) {
+    // Allow requests with no origin (e.g. curl, mobile apps)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+  optionsSuccessStatus: 200
 };
 
 // Middleware
