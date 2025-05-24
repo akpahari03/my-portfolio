@@ -8,6 +8,7 @@ import project1Image from '../assets/project1.png';
 import project2Image from '../assets/project2.png'; 
 import project3Image from '../assets/project3.png';  
 import project4Image from '../assets/project4.png'; 
+import project5Image from '../assets/project5.png'; 
 
 const projects = [
   {
@@ -38,13 +39,22 @@ const projects = [
     image: project3Image, 
   },
   {
+    title: 'Url Shortener - LinksShrinkly',
+    stack: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'JWT', 'Tailwind CSS'],
+    description:
+      'Built a full-stack URL shortening application with React.js frontend and Node.js backend, featuring user authentication, custom URL slugs, click tracking analytics, and responsive design. Implemented Redux for state management, TanStack Router for navigation, MongoDB for data persistence, and JWT-based authentication with protected routes.',
+    github: 'https://github.com/akpahari03/url-shortner',
+    demo: 'https://linkshrinkly.vercel.app/',
+    image: project4Image,
+  },
+  {
     title: 'Weather Application',
     stack: ['HTML', 'CSS', 'React.JS', 'OpenWeather API', 'GeoDB Cities API'],
     description:
       'Weather app built with React.js. Integrated OpenWeather and GeoDB APIs for real-time weather and location data.',
     github: 'https://github.com/akpahari03/Weather-App',
     demo: 'https://ayushkp-weather-app.vercel.app/',
-    image: project4Image,
+    image: project5Image,
   }
 ];
 
