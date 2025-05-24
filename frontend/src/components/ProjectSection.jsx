@@ -42,7 +42,7 @@ const projects = [
     title: 'Url Shortener - LinksShrinkly',
     stack: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'JWT', 'Tailwind CSS'],
     description:
-      'Built a full-stack URL shortening application with React.js frontend and Node.js backend, featuring user authentication, custom URL slugs, click tracking analytics, and responsive design. Implemented Redux for state management, TanStack Router for navigation, MongoDB for data persistence, and JWT-based authentication with protected routes.',
+      'Full-stack URL shortening application with user authentication, custom slugs, click analytics, and responsive design using React.js and Node.js with MongoDB database.',
     github: 'https://github.com/akpahari03/url-shortner',
     demo: 'https://linkshrinkly.vercel.app/',
     image: project4Image,
