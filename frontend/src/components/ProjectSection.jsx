@@ -39,7 +39,7 @@ const projects = [
     image: project3Image, 
   },
   {
-    title: 'Url Shortener - LinksShrinkly',
+    title: 'Url Shortener - LinkShrinkly',
     stack: ['React.js', 'Node.js', 'MongoDB', 'Redux', 'JWT', 'Tailwind CSS'],
     description:
       'Full-stack URL shortening application with user authentication, custom slugs, click analytics, and responsive design using React.js and Node.js with MongoDB database.',
