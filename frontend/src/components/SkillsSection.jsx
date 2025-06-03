@@ -5,17 +5,21 @@ import {
   DiJavascript1, DiReact, DiNodejs, DiMongodb, DiCss3, DiHtml5, DiGit, DiSass
 } from 'react-icons/di';
 import { 
-  SiRedis, SiSocketdotio, SiExpress, SiTailwindcss, SiCplusplus, SiPostgresql, SiFirebase, SiGithub
+  SiRedis, SiSocketdotio, SiExpress, SiTailwindcss, SiCplusplus, SiPostgresql, 
+  SiFirebase, SiGithub, SiExpo
 } from 'react-icons/si';
+import { TbBrandReactNative } from 'react-icons/tb';
 
 const SkillsSection = () => {
   const frontendSkills = [
     { name: "React.js", icon: <DiReact size={28} />, color: "#61DAFB" },
+    { name: "React Native", icon: <TbBrandReactNative size={28} />, color: "#61DAFB" },
     { name: "JavaScript", icon: <DiJavascript1 size={28} />, color: "#F7DF1E" },
     { name: "HTML5", icon: <DiHtml5 size={28} />, color: "#E34F26" },
     { name: "CSS3", icon: <DiCss3 size={28} />, color: "#1572B6" },
     { name: "Tailwind CSS", icon: <SiTailwindcss size={28} />, color: "#06B6D4" },
-    { name: "Sass", icon: <DiSass size={28} />, color: "#CC6699" }
+    { name: "Sass", icon: <DiSass size={28} />, color: "#CC6699" },
+    { name: "Expo", icon: <SiExpo size={28} />, color: "#000020" }
   ];
 
   const backendSkills = [
@@ -31,7 +35,8 @@ const SkillsSection = () => {
     { name: "C++", icon: <SiCplusplus size={28} />, color: "#00599C" },
     { name: "Git", icon: <DiGit size={28} />, color: "#F05032" },
     { name: "GitHub", icon: <SiGithub size={28} />, color: "#FFFFFF" },
-    { name: "Firebase", icon: <SiFirebase size={28} />, color: "#FFCA28" }
+    { name: "Clerk Auth", icon: <div style={{fontSize: '24px', fontWeight: 'bold'}}>🔐</div>, color: "#6C47FF" },
+    { name: "Render", icon: <div style={{fontSize: '24px', fontWeight: 'bold'}}>☁️</div>, color: "#46E3B7" }
   ];
 
   const container = {
@@ -70,7 +75,7 @@ const SkillsSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className={styles.categoryTitle}>Frontend Development</h3>
+            <h3 className={styles.categoryTitle}>Frontend & Mobile Development</h3>
             <motion.div 
               className={styles.skillsGrid}
               variants={container}
@@ -144,7 +149,7 @@ const SkillsSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3 className={styles.categoryTitle}>Other Skills</h3>
+            <h3 className={styles.categoryTitle}>Tools & Platforms</h3>
             <motion.div 
               className={styles.skillsGrid}
               variants={container}
@@ -191,7 +196,7 @@ const SkillsSection = () => {
               transition={{ delay: 0.6 }}
             >
               <span className={styles.expertiseBullet} />
-              <span className={styles.expertiseText}>Developing responsive and interactive user interfaces with React.js</span>
+              <span className={styles.expertiseText}>Developing responsive web interfaces and cross-platform mobile apps with React.js and React Native</span>
             </motion.li>
             <motion.li 
               initial={{ opacity: 0, x: -20 }}
@@ -200,7 +205,7 @@ const SkillsSection = () => {
               transition={{ delay: 0.7 }}
             >
               <span className={styles.expertiseBullet} />
-              <span className={styles.expertiseText}>Building RESTful APIs and backend services with Node.js and Express</span>
+              <span className={styles.expertiseText}>Building RESTful APIs and secure backend services with Node.js, Express, and authentication systems</span>
             </motion.li>
             <motion.li 
               initial={{ opacity: 0, x: -20 }}
@@ -209,7 +214,7 @@ const SkillsSection = () => {
               transition={{ delay: 0.8 }}
             >
               <span className={styles.expertiseBullet} />
-              <span className={styles.expertiseText}>Database design and management with MongoDB and PostgreSQL</span>
+              <span className={styles.expertiseText}>Full-stack database management with MongoDB, PostgreSQL, and Redis for caching and rate limiting</span>
             </motion.li>
             <motion.li 
               initial={{ opacity: 0, x: -20 }}
@@ -218,13 +223,22 @@ const SkillsSection = () => {
               transition={{ delay: 0.9 }}
             >
               <span className={styles.expertiseBullet} />
-              <span className={styles.expertiseText}>Creating real-time applications with Socket.IO and Redis</span>
+              <span className={styles.expertiseText}>Mobile app development and deployment using Expo, with production-ready authentication and state management</span>
             </motion.li>
             <motion.li 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 1.0 }}
+            >
+              <span className={styles.expertiseBullet} />
+              <span className={styles.expertiseText}>Creating real-time applications with Socket.IO and deploying scalable applications on cloud platforms</span>
+            </motion.li>
+            <motion.li 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 1.1 }}
             >
               <span className={styles.expertiseBullet} />
               <span className={styles.expertiseText}>Problem-solving and algorithmic thinking with C++ and Data Structures</span>

@@ -9,8 +9,17 @@ import project2Image from '../assets/project2.png';
 import project3Image from '../assets/project3.png';  
 import project4Image from '../assets/project4.png'; 
 import project5Image from '../assets/project5.png'; 
+import expenseTrackerImage from '../assets/expense-tracker-bg.png';
 
 const projects = [
+  {
+    title: 'Expense Tracker App',
+    stack: ['React Native', 'Expo', 'Node.js', 'Express.js', 'PostgreSQL', 'Redis', 'Clerk Auth'],
+    description: 'Full-stack mobile expense tracking application with user authentication, real-time transaction management, and financial analytics. Features secure user auth, categorized transactions, and responsive design.',
+    github: 'https://github.com/akpahari03/expense-tracker-app-api',
+    demo: 'https://github.com/akpahari03/expense-tracker-app-api',
+    image: expenseTrackerImage, 
+  },
   {
     title: 'E-commerce Website',
     stack: ['React.JS', 'Node.JS', 'Express.JS', 'MongoDB'],
