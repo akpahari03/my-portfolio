@@ -26,7 +26,7 @@ const projects = [
     description:
       'Full-stack e-commerce web application facilitating seamless interaction between users and the platform. Implemented product management and shopping cart functionality.',
     github: 'https://github.com/akpahari03/SwiftStyle',
-    demo: '#',
+    demo: 'https://github.com/akpahari03/SwiftStyle',
     image: project1Image, 
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     description:
       'Real-time chat app using the MERN stack with AI support from Google Gemini. Used Redis and socket connections for smooth communication.',
     github: 'https://github.com/akpahari03/Chat-App',
-    demo: '#',
+    demo: 'https://github.com/akpahari03/Chat-App',
     image: project2Image,
   },
   {
