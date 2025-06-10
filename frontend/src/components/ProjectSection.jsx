@@ -16,8 +16,8 @@ const projects = [
     title: 'Expense Tracker App',
     stack: ['React Native', 'Expo', 'Node.js', 'Express.js', 'PostgreSQL', 'Redis', 'Clerk Auth'],
     description: 'Full-stack mobile expense tracking application with user authentication, real-time transaction management, and financial analytics. Features secure user auth, categorized transactions, and responsive design.',
-    github: 'https://github.com/akpahari03/expense-tracker-app-api',
-    demo: 'https://github.com/akpahari03/expense-tracker-app-api',
+    github: 'https://github.com/akpahari03/expense-tracker-app',
+    demo: 'https://www.loom.com/share/96b22f14ef2f4c31a722f7a5d3f58b89?sid=4dcb9138-4e97-4a4b-85d8-55bd66b45509',
     image: expenseTrackerImage, 
   },
   {
