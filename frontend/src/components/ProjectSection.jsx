@@ -10,6 +10,7 @@ import project3Image from '../assets/project3.png';
 import project4Image from '../assets/project4.png'; 
 import project5Image from '../assets/project5.png'; 
 import expenseTrackerImage from '../assets/expense-tracker-bg.png';
+import intervuehubImage from '../assets/intervuehub.png';
 
 const projects = [
   {
@@ -37,6 +38,14 @@ const projects = [
     github: 'https://github.com/akpahari03/Chat-App',
     demo: 'https://github.com/akpahari03/Chat-App',
     image: project2Image,
+  },
+  {
+    title: 'IntervueHub - Interview Platform',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Convex', 'Clerk Auth', 'Stream.io', 'Monaco Editor', 'Radix UI'],
+    description: 'Modern liquid glass interview platform enabling seamless technical interviews with real-time video calls, collaborative code editing, and comprehensive candidate evaluation. Features glassmorphism UI, multi-language coding support, interview scheduling, and detailed assessment tools.',
+    github: 'https://github.com/akpahari03/intervuehub',
+    demo: 'https://intervuehub.vercel.app',
+    image: intervuehubImage,
   },
   {
     title: 'Solana App Kit',

@@ -13,7 +13,9 @@ import { TbBrandReactNative } from 'react-icons/tb';
 const SkillsSection = () => {
   const frontendSkills = [
     { name: "React.js", icon: <DiReact size={28} />, color: "#61DAFB" },
+    { name: "Next.js", icon: <SiNextdotjs size={28} />, color: "#000000" },
     { name: "React Native", icon: <TbBrandReactNative size={28} />, color: "#61DAFB" },
+    { name: "TypeScript", icon: <SiTypescript size={28} />, color: "#3178C6" },
     { name: "JavaScript", icon: <DiJavascript1 size={28} />, color: "#F7DF1E" },
     { name: "HTML5", icon: <DiHtml5 size={28} />, color: "#E34F26" },
     { name: "CSS3", icon: <DiCss3 size={28} />, color: "#1572B6" },
@@ -21,21 +23,25 @@ const SkillsSection = () => {
     { name: "Sass", icon: <DiSass size={28} />, color: "#CC6699" },
     { name: "Expo", icon: <SiExpo size={28} />, color: "#000020" }
   ];
-
+  
   const backendSkills = [
     { name: "Node.js", icon: <DiNodejs size={28} />, color: "#339933" },
     { name: "Express.js", icon: <SiExpress size={28} />, color: "#FFFFFF" },
+    { name: "Convex", icon: <div style={{fontSize: '24px', fontWeight: 'bold'}}>⚡</div>, color: "#FF6B35" },
     { name: "MongoDB", icon: <DiMongodb size={28} />, color: "#47A248" },
     { name: "PostgreSQL", icon: <SiPostgresql size={28} />, color: "#336791" },
     { name: "Redis", icon: <SiRedis size={28} />, color: "#DC382D" },
     { name: "Socket.io", icon: <SiSocketdotio size={28} />, color: "#010101" }
   ];
-
+  
   const otherSkills = [
     { name: "C++", icon: <SiCplusplus size={28} />, color: "#00599C" },
     { name: "Git", icon: <DiGit size={28} />, color: "#F05032" },
     { name: "GitHub", icon: <SiGithub size={28} />, color: "#FFFFFF" },
     { name: "Clerk Auth", icon: <div style={{fontSize: '24px', fontWeight: 'bold'}}>🔐</div>, color: "#6C47FF" },
+    { name: "Stream.io", icon: <div style={{fontSize: '24px', fontWeight: 'bold'}}>📹</div>, color: "#005FFF" },
+    { name: "Radix UI", icon: <div style={{fontSize: '24px', fontWeight: 'bold'}}>🎨</div>, color: "#161618" },
+    { name: "Monaco Editor", icon: <SiVisualstudiocode size={28} />, color: "#007ACC" },
     { name: "Render", icon: <div style={{fontSize: '24px', fontWeight: 'bold'}}>☁️</div>, color: "#46E3B7" }
   ];
 
