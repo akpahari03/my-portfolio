@@ -200,7 +200,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
           >
-            <a href="https://drive.google.com/file/d/1mb2kk2bouD2qnHWF3e_d7y_x9YtZLs9o/view?usp=sharing" target='_blank' className={styles.primaryBtn}>Download Resume</a>
+            <a href="https://drive.google.com/file/d/13Eb4Iy_S0uh_k6QBV8V7vmzm5UMd9Jlz/view?usp=sharing" target='_blank' className={styles.primaryBtn}>Download Resume</a>
             <button onClick={scrollToProjects} className={styles.secondaryBtn}>
               View Projects
             </button>
