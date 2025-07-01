@@ -42,7 +42,7 @@ const projects = [
   {
     title: 'IntervueHub - Interview Platform',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Convex', 'Clerk Auth', 'Stream.io', 'Monaco Editor', 'Radix UI'],
-    description: 'Modern liquid glass interview platform enabling seamless technical interviews with real-time video calls, collaborative code editing, and comprehensive candidate evaluation. Features glassmorphism UI, multi-language coding support, interview scheduling, and detailed assessment tools.',
+    description: 'Interview platform enabling seamless technical interviews with real-time video calls, collaborative code editing. Features multi-language coding support and interview scheduling.',
     github: 'https://github.com/akpahari03/intervuehub',
     demo: 'https://intervuehub.vercel.app',
     image: intervuehubImage,
@@ -51,7 +51,7 @@ const projects = [
     title: 'Solana App Kit',
     stack: ['React.js', 'React Hooks', 'CSS Animations', 'Touch Event Handling'],
     description:
-      'Developed a responsive web application for Solana App Kit using React.js with CSS Modules, implementing a component-based architecture featuring interactive elements, animations, and mobile-first design principles',
+      'Responsive web application for Solana App Kit using React.js with CSS Modules, implementing a component-based architecture featuring interactive elements, animations, and mobile-first design principles',
     github: 'https://github.com/akpahari03/solana-app-kit-frontend',
     demo: 'https://solana-app-kit-frontend.vercel.app/',
     image: project3Image, 
